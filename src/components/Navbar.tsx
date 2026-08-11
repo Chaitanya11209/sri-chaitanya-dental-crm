@@ -1,0 +1,265 @@
+import { useState, useEffect } from 'react';
+import { Menu, X, Phone, Moon, Sun } from 'lucide-react';
+import { useDarkMode } from '../App';
+import { clinicConfig } from '../config/clinicConfig';
+import clinicLogo from '../assets/images/regenerated_image_1782225273405.png';
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { darkMode, toggleDarkMode } = useDarkMode();
+  const [activeSection, setActiveSection] = useState('#home');
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  const navLinks = [
+    { href: '#home', label: 'Home' },
+    { href: '#about', label: 'About' },
+    { href: '#services', label: 'Services' },
+    { href: '#results', label: 'Results' },
+    { href: '#reviews', label: 'Reviews' },
+    { href: '#faq', label: 'FAQ' },
+    { href: '#contact', label: 'Contact' },
+  ];
+
+  useEffect(() => {
+    const sections = navLinks.map(link => document.querySelector(link.href));
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.target.id) {
+            setActiveSection(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((sec) => {
+      if (sec) observer.observe(sec);
+    });
+
+    const handleHashChange = () => {
+      if (window.location.hash) {
+        setActiveSection(window.location.hash);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
+  return (
+    <nav
+      className={`fixed w-full z-50 transition-all duration-500 ${
+        scrolled
+          ? 'bg-white/95 backdrop-blur-lg shadow-lg shadow-slate-200/50'
+          : 'bg-transparent'
+      } ${darkMode ? '!bg-slate-900/95 shadow-slate-900/50' : ''}`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 sm:h-20">
+          <a href="#home" className="flex items-center gap-2.5 sm:gap-3 group">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white p-0.5 shadow-md border border-teal-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-teal-500/10 group-hover:border-teal-300 dark:group-hover:border-teal-400 ring-2 ring-transparent group-hover:ring-teal-500/20">
+              <img 
+                src={clinicLogo} 
+                alt="Sri Chaitanya Dental Care Logo" 
+                className="w-full h-full object-contain rounded-full transition-transform duration-500 group-hover:rotate-12"
+              />
+            </div>
+            <div className="flex flex-col text-left font-sans">
+              <span className={`text-[13px] sm:text-[16px] lg:text-[18px] font-black tracking-tight leading-none ${darkMode ? 'text-white' : 'text-slate-900'} uppercase`}>
+                SRI CHAITANYA
+              </span>
+              <span className="text-[8px] sm:text-[9.5px] lg:text-[10px] font-extrabold text-[#0F6E6E] dark:text-teal-400 uppercase tracking-widest mt-1 leading-none">
+                Multispeciality Dental Care
+              </span>
+            </div>
+          </a>
+
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.href;
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`text-sm font-medium transition-all duration-200 hover:text-teal-600 relative py-1.5 ${
+                    isActive
+                      ? 'text-teal-600 dark:text-teal-400 font-semibold'
+                      : darkMode
+                      ? 'text-slate-300'
+                      : 'text-slate-600'
+                  }`}
+                >
+                  <span className={`relative transition-all duration-200 ${isActive ? 'text-teal-600 dark:text-teal-400 font-semibold' : ''}`}>
+                    {link.label}
+                    {isActive && (
+                      <span className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-teal-600 dark:bg-teal-400 rounded-full animate-fade-in" />
+                    )}
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="hidden lg:flex items-center gap-3 xl:gap-4">
+            <button
+              onClick={toggleDarkMode}
+              className={`p-2 sm:p-2.5 rounded-lg sm:rounded-xl transition-colors duration-200 ${
+                darkMode ? 'bg-slate-800 text-yellow-400 hover:bg-slate-700' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              {darkMode ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
+            </button>
+
+            <a
+              href={`tel:${clinicConfig.phone.replace(/\s+/g, '')}`}
+              className="hidden lg:flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-teal-600 transition-colors duration-200"
+            >
+              <Phone className="w-4 h-4 text-teal-600" />
+              <span className="font-semibold text-sm tracking-wide whitespace-nowrap">{clinicConfig.phone}</span>
+            </a>
+
+            <a
+              href="#appointment"
+              className="px-5 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-semibold rounded-lg sm:rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-300 shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40 hover:-translate-y-0.5"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <div className="flex lg:hidden items-center gap-2 sm:gap-3">
+            <button
+              onClick={toggleDarkMode}
+              className={`p-2 rounded-lg transition-colors ${
+                darkMode ? 'bg-slate-800 text-yellow-400' : 'bg-slate-100 text-slate-600'
+              }`}
+            >
+              {darkMode ? <Sun className="w-4 h-4 sm:w-5 sm:h-5" /> : <Moon className="w-4 h-4 sm:w-5 sm:h-5" />}
+            </button>
+
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className={`p-2 rounded-lg transition-colors z-10 ${
+                darkMode ? 'text-white hover:bg-slate-800' : 'text-slate-800 hover:bg-slate-100'
+              }`}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu overlay */}
+      <div
+        className={`lg:hidden fixed inset-0 transition-all duration-300 ${
+          isOpen
+            ? 'opacity-100 pointer-events-auto'
+            : 'opacity-0 pointer-events-none'
+        }`}
+      >
+        <div
+          className={`absolute inset-0 bg-slate-900/50 backdrop-blur-sm transition-opacity duration-300 ${
+            isOpen ? 'opacity-100' : 'opacity-0'
+          }`}
+          onClick={() => setIsOpen(false)}
+        />
+
+        <div
+          className={`absolute top-0 right-0 bottom-0 w-[280px] sm:w-[320px] transition-transform duration-300 ease-out ${
+            isOpen ? 'translate-x-0' : 'translate-x-full'
+          } ${
+            darkMode ? 'bg-slate-900' : 'bg-white'
+          } shadow-2xl`}
+        >
+          <div className="flex items-center justify-end h-16 sm:h-20 px-4 sm:px-6 border-b border-slate-200 dark:border-slate-700">
+            <button
+              onClick={() => setIsOpen(false)}
+              className={`p-2 rounded-lg transition-colors ${
+                darkMode ? 'text-white hover:bg-slate-800' : 'text-slate-800 hover:bg-slate-100'
+              }`}
+              aria-label="Close menu"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+
+          <nav className="p-4 sm:p-6 overflow-y-auto">
+            <div className="flex flex-col gap-1">
+              {navLinks.map((link, index) => {
+                const isActive = activeSection === link.href;
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-base font-medium transition-all duration-300 py-3 px-4 rounded-lg ${
+                      isActive
+                        ? darkMode
+                          ? 'text-teal-400 bg-teal-950/30 font-semibold border-l-2 border-teal-400 pl-3.5'
+                          : 'text-teal-600 bg-teal-50 font-semibold border-l-2 border-teal-600 pl-3.5'
+                        : darkMode
+                        ? 'text-slate-300 hover:text-teal-400 hover:bg-slate-800'
+                        : 'text-slate-600 hover:text-teal-600 hover:bg-slate-50'
+                    } ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
+                    style={{ transitionDelay: isOpen ? `${index * 50}ms` : '0ms' }}
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
+              <a
+                href={`tel:${clinicConfig.phone.replace(/\s+/g, '')}`}
+                className={`flex items-center gap-3 py-3 px-4 rounded-lg transition-colors ${
+                  darkMode
+                    ? 'text-slate-300 hover:bg-slate-800'
+                    : 'text-slate-600 hover:bg-slate-50'
+                }`}
+              >
+                <Phone className="w-4 h-4 text-teal-600" />
+                <span className="font-medium">{clinicConfig.phone}</span>
+              </a>
+            </div>
+
+            <div className="mt-6">
+              <a
+                href="#appointment"
+                onClick={() => setIsOpen(false)}
+                className="w-full py-3 sm:py-3.5 px-4 bg-gradient-to-r from-teal-500 to-teal-600 text-white text-center font-semibold rounded-xl shadow-lg shadow-teal-500/30 block active:scale-[0.98] transition-transform"
+              >
+                Book Appointment
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </nav>
+  );
+}

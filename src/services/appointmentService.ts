@@ -1,0 +1,169 @@
+import { supabase } from '../supabaseClient';
+import { generateUniquePatientCode } from '../utils/patientUtils';
+import { validateAppointmentTime, normalizeTo12HourTime } from '../utils/appointmentTime';
+
+export const createAppointment = async (formData: any) => {
+  // Service-Level Validation (Server-Side equivalent)
+  if (!formData.name || formData.name.trim().length < 2) {
+    throw new Error('Name must be at least 2 characters.');
+  }
+  if (!/^[A-Za-z\s.]+$/.test(formData.name.trim())) {
+    throw new Error('Name can only contain letters, spaces, and dots.');
+  }
+  const strippedPhone = (formData.phone || '').replace(/[\s\-()]/g, '');
+  if (!formData.phone || !/^(?:\+?91|0)?[6-9]\d{9}$/.test(strippedPhone)) {
+    throw new Error('Please provide a valid 10-digit Indian phone number.');
+  }
+  if (formData.email && formData.email.trim()) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email.trim())) {
+      throw new Error('Please provide a valid email address.');
+    }
+  }
+  if (!formData.location || formData.location.trim().length < 2) {
+    throw new Error('Location must be at least 2 characters.');
+  }
+  if (!formData.service) {
+    throw new Error('Please select a valid service.');
+  }
+  if (!formData.date) {
+    throw new Error('Appointment date is required.');
+  }
+  if (!formData.time) {
+    throw new Error('Preferred time is required.');
+  }
+
+  // Validate appointment time against allowed 15-minute slot range (5:00 AM - 11:00 PM)
+  validateAppointmentTime(formData.time);
+
+  const normalizedTime = normalizeTo12HourTime(formData.time);
+
+  // STEP 1
+  // Check existing patient by matching both Name and Phone
+  const { data: existingPatients } = await supabase
+    .from('patients')
+    .select('*')
+    .eq('phone', formData.phone)
+    .eq('name', formData.name);
+
+  let existingPatient = existingPatients?.[0];
+  if (!existingPatient) {
+    // Fallback to match by phone only
+    const { data: fallbackPatients } = await supabase
+      .from('patients')
+      .select('*')
+      .eq('phone', formData.phone);
+    existingPatient = fallbackPatients?.[0];
+  }
+
+  let patientId = null;
+
+  // STEP 2
+  // Existing patient
+
+  if (existingPatient) {
+
+    patientId = existingPatient.id;
+
+  } else {
+
+    // STEP 3
+    // Create new patient
+
+    const patientCode = generateUniquePatientCode();
+
+    const { data: newPatients, error } = await supabase
+      .from('patients')
+      .insert([
+        {
+          patient_code: patientCode,
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          location: formData.location,
+          patient_status: 'Registered'
+        },
+      ])
+      .select();
+
+    if (error) {
+      throw error;
+    }
+
+    if (newPatients && newPatients.length > 0) {
+      patientId = newPatients[0].id;
+    } else {
+      // Re-query if select somehow returned empty range
+      const { data: reQueryList } = await supabase
+        .from('patients')
+        .select('id')
+        .eq('phone', formData.phone)
+        .eq('name', formData.name);
+      
+      let finalId = reQueryList?.[0]?.id;
+      if (!finalId) {
+        const { data: finalFallback } = await supabase
+          .from('patients')
+          .select('id')
+          .eq('phone', formData.phone);
+        finalId = finalFallback?.[0]?.id;
+      }
+      patientId = finalId;
+    }
+  }
+
+  // STEP 4
+  // Count visits
+
+  const { count } = await supabase
+    .from('appointments')
+    .select('*', {
+      count: 'exact',
+      head: true,
+    })
+    .eq('patient_id', patientId);
+
+  const visitCount = (count || 0) + 1;
+
+  // STEP 5
+  // Create appointment
+
+  const { data, error } = await supabase
+    .from('appointments')
+    .insert([
+      {
+        patient_id: patientId,
+
+        name: formData.name,
+
+        phone: formData.phone,
+
+        email: formData.email,
+
+        treatment: formData.service,
+
+        next_visit: formData.date,
+
+        appointment_time: normalizedTime,
+
+        location: formData.location,
+
+        notes: formData.message,
+
+        visit_count: visitCount,
+
+        visit_type:
+          visitCount > 1
+            ? 'Returning'
+            : 'New',
+
+        status: 'Pending',
+      },
+    ]);
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+};

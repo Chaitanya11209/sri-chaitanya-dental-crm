@@ -1,0 +1,1257 @@
+[
+  {
+    "full path": ".env.example",
+    "file size": 404,
+    "modified timestamp": "2026-08-11T08:25:32.659Z"
+  },
+  {
+    "full path": ".gitignore",
+    "file size": 121,
+    "modified timestamp": "2026-08-11T05:56:49.267Z"
+  },
+  {
+    "full path": "backup-recovery-guide.md",
+    "file size": 4188,
+    "modified timestamp": "2026-08-11T05:56:49.236Z"
+  },
+  {
+    "full path": "bun.lock",
+    "file size": 110861,
+    "modified timestamp": "2026-08-11T08:24:46.056Z"
+  },
+  {
+    "full path": "CHANGELOG.md",
+    "file size": 2789,
+    "modified timestamp": "2026-08-11T05:56:49.237Z"
+  },
+  {
+    "full path": "components.json",
+    "file size": 434,
+    "modified timestamp": "2026-08-11T05:56:49.248Z"
+  },
+  {
+    "full path": "DEPLOY_GUIDE.md",
+    "file size": 3874,
+    "modified timestamp": "2026-08-11T05:56:49.243Z"
+  },
+  {
+    "full path": "deployment-guide.md",
+    "file size": 4314,
+    "modified timestamp": "2026-08-11T05:56:49.250Z"
+  },
+  {
+    "full path": "docker-compose.yml",
+    "file size": 860,
+    "modified timestamp": "2026-08-11T05:56:49.227Z"
+  },
+  {
+    "full path": "docs/saas_postgres_schema.sql",
+    "file size": 6769,
+    "modified timestamp": "2026-08-11T05:56:49.226Z"
+  },
+  {
+    "full path": "docs/vercel-setup.md",
+    "file size": 433,
+    "modified timestamp": "2026-08-11T05:56:49.253Z"
+  },
+  {
+    "full path": "EXPORT_MANIFEST.json",
+    "file size": 34243,
+    "modified timestamp": "2026-08-11T09:05:29.771Z"
+  },
+  {
+    "full path": "index.html",
+    "file size": 6748,
+    "modified timestamp": "2026-08-11T05:56:49.234Z"
+  },
+  {
+    "full path": "metadata.json",
+    "file size": 332,
+    "modified timestamp": "2026-08-11T05:56:49.225Z"
+  },
+  {
+    "full path": "package.json",
+    "file size": 3046,
+    "modified timestamp": "2026-08-11T08:24:46.057Z"
+  },
+  {
+    "full path": "package.standalone.json",
+    "file size": 2514,
+    "modified timestamp": "2026-08-11T05:56:49.255Z"
+  },
+  {
+    "full path": "public/clinic_logo.svg",
+    "file size": 5888,
+    "modified timestamp": "2026-08-11T05:56:49.247Z"
+  },
+  {
+    "full path": "public/doctor.jpg",
+    "file size": 135758,
+    "modified timestamp": "2026-08-11T05:56:49.256Z"
+  },
+  {
+    "full path": "public/doctor11.jpg",
+    "file size": 138237,
+    "modified timestamp": "2026-08-11T05:56:49.242Z"
+  },
+  {
+    "full path": "public/favicon.svg",
+    "file size": 5888,
+    "modified timestamp": "2026-08-11T05:56:49.215Z"
+  },
+  {
+    "full path": "public/hero-img.avif",
+    "file size": 120265,
+    "modified timestamp": "2026-08-11T05:56:49.249Z"
+  },
+  {
+    "full path": "public/opengraph.jpg",
+    "file size": 122313,
+    "modified timestamp": "2026-08-11T05:56:49.284Z"
+  },
+  {
+    "full path": "public/robots.txt",
+    "file size": 23,
+    "modified timestamp": "2026-08-11T05:56:49.228Z"
+  },
+  {
+    "full path": "public/sw.js",
+    "file size": 4379,
+    "modified timestamp": "2026-08-11T05:56:49.232Z"
+  },
+  {
+    "full path": "README.md",
+    "file size": 3459,
+    "modified timestamp": "2026-08-11T05:56:49.221Z"
+  },
+  {
+    "full path": "scripts/pack-project.js",
+    "file size": 9339,
+    "modified timestamp": "2026-08-11T05:56:49.277Z"
+  },
+  {
+    "full path": "scripts/setup-db.js",
+    "file size": 7779,
+    "modified timestamp": "2026-08-11T05:56:49.255Z"
+  },
+  {
+    "full path": "src/App.tsx",
+    "file size": 3199,
+    "modified timestamp": "2026-08-11T05:56:49.222Z"
+  },
+  {
+    "full path": "src/assets/images/regenerated_image_1782221970461.jpg",
+    "file size": 27373,
+    "modified timestamp": "2026-08-11T05:56:49.227Z"
+  },
+  {
+    "full path": "src/assets/images/regenerated_image_1782225273405.png",
+    "file size": 1554278,
+    "modified timestamp": "2026-08-11T05:56:49.240Z"
+  },
+  {
+    "full path": "src/assets/images/regenerated_image_1784003662082.png",
+    "file size": 1554278,
+    "modified timestamp": "2026-08-11T05:56:49.254Z"
+  },
+  {
+    "full path": "src/components/Appointment.tsx",
+    "file size": 19889,
+    "modified timestamp": "2026-08-11T08:29:40.885Z"
+  },
+  {
+    "full path": "src/components/AppointmentsContext.tsx",
+    "file size": 6783,
+    "modified timestamp": "2026-08-11T05:56:49.273Z"
+  },
+  {
+    "full path": "src/components/BackToTop.tsx",
+    "file size": 962,
+    "modified timestamp": "2026-08-11T05:56:49.241Z"
+  },
+  {
+    "full path": "src/components/BeforeAfter.tsx",
+    "file size": 11354,
+    "modified timestamp": "2026-08-11T05:56:49.223Z"
+  },
+  {
+    "full path": "src/components/copilot/PatientSnapshot.tsx",
+    "file size": 21217,
+    "modified timestamp": "2026-08-11T05:56:49.230Z"
+  },
+  {
+    "full path": "src/components/DentalChart.tsx",
+    "file size": 53527,
+    "modified timestamp": "2026-08-11T05:56:49.264Z"
+  },
+  {
+    "full path": "src/components/DentalLogo.tsx",
+    "file size": 1359,
+    "modified timestamp": "2026-08-11T05:56:49.262Z"
+  },
+  {
+    "full path": "src/components/DoctorSelect.tsx",
+    "file size": 6973,
+    "modified timestamp": "2026-08-11T05:56:49.264Z"
+  },
+  {
+    "full path": "src/components/DoctorSpecificDashboard.tsx",
+    "file size": 37738,
+    "modified timestamp": "2026-08-11T05:56:49.236Z"
+  },
+  {
+    "full path": "src/components/DuplicatePatientWarningModal.tsx",
+    "file size": 5779,
+    "modified timestamp": "2026-08-11T05:56:49.281Z"
+  },
+  {
+    "full path": "src/components/ErrorBoundary.tsx",
+    "file size": 8269,
+    "modified timestamp": "2026-08-11T05:56:49.214Z"
+  },
+  {
+    "full path": "src/components/ExecutiveCommandCenter.tsx",
+    "file size": 71894,
+    "modified timestamp": "2026-08-11T05:56:49.219Z"
+  },
+  {
+    "full path": "src/components/FAQ.tsx",
+    "file size": 5244,
+    "modified timestamp": "2026-08-11T05:56:49.269Z"
+  },
+  {
+    "full path": "src/components/FinalCTA.tsx",
+    "file size": 4264,
+    "modified timestamp": "2026-08-11T05:56:49.232Z"
+  },
+  {
+    "full path": "src/components/Footer.tsx",
+    "file size": 9629,
+    "modified timestamp": "2026-08-11T05:56:49.262Z"
+  },
+  {
+    "full path": "src/components/Gallery.tsx",
+    "file size": 5346,
+    "modified timestamp": "2026-08-11T05:56:49.239Z"
+  },
+  {
+    "full path": "src/components/GoogleLocationAutocomplete.tsx",
+    "file size": 14201,
+    "modified timestamp": "2026-08-11T08:27:14.307Z"
+  },
+  {
+    "full path": "src/components/Hero.tsx",
+    "file size": 10369,
+    "modified timestamp": "2026-08-11T05:56:49.235Z"
+  },
+  {
+    "full path": "src/components/LoadingScreen.tsx",
+    "file size": 1683,
+    "modified timestamp": "2026-08-11T05:56:49.249Z"
+  },
+  {
+    "full path": "src/components/Location.tsx",
+    "file size": 10364,
+    "modified timestamp": "2026-08-11T05:56:49.265Z"
+  },
+  {
+    "full path": "src/components/MeetDentist.tsx",
+    "file size": 6015,
+    "modified timestamp": "2026-08-11T05:56:49.244Z"
+  },
+  {
+    "full path": "src/components/Navbar.tsx",
+    "file size": 11005,
+    "modified timestamp": "2026-08-11T05:56:49.275Z"
+  },
+  {
+    "full path": "src/components/NotificationProvider.tsx",
+    "file size": 10381,
+    "modified timestamp": "2026-08-11T05:56:49.261Z"
+  },
+  {
+    "full path": "src/components/Patient360.tsx",
+    "file size": 93690,
+    "modified timestamp": "2026-08-11T07:49:57.126Z"
+  },
+  {
+    "full path": "src/components/PatientEndodonticCenter.tsx",
+    "file size": 17921,
+    "modified timestamp": "2026-08-11T05:56:49.240Z"
+  },
+  {
+    "full path": "src/components/PatientImagingSystem.tsx",
+    "file size": 62336,
+    "modified timestamp": "2026-08-11T05:56:49.226Z"
+  },
+  {
+    "full path": "src/components/PatientTreatmentCoordinator.tsx",
+    "file size": 20685,
+    "modified timestamp": "2026-08-11T05:56:49.247Z"
+  },
+  {
+    "full path": "src/components/portal/AppointmentsTab.tsx",
+    "file size": 12129,
+    "modified timestamp": "2026-08-11T07:51:27.868Z"
+  },
+  {
+    "full path": "src/components/portal/BillingTab.tsx",
+    "file size": 6114,
+    "modified timestamp": "2026-08-11T05:56:49.258Z"
+  },
+  {
+    "full path": "src/components/portal/DashboardTab.tsx",
+    "file size": 13782,
+    "modified timestamp": "2026-08-11T05:56:49.266Z"
+  },
+  {
+    "full path": "src/components/portal/DocumentsTab.tsx",
+    "file size": 5301,
+    "modified timestamp": "2026-08-11T05:56:49.223Z"
+  },
+  {
+    "full path": "src/components/portal/DownloadsTab.tsx",
+    "file size": 8779,
+    "modified timestamp": "2026-08-11T05:56:49.246Z"
+  },
+  {
+    "full path": "src/components/portal/FeedbackTab.tsx",
+    "file size": 8414,
+    "modified timestamp": "2026-08-11T05:56:49.259Z"
+  },
+  {
+    "full path": "src/components/portal/FollowupsTab.tsx",
+    "file size": 13217,
+    "modified timestamp": "2026-08-11T05:56:49.284Z"
+  },
+  {
+    "full path": "src/components/portal/MessagesTab.tsx",
+    "file size": 8680,
+    "modified timestamp": "2026-08-11T05:56:49.247Z"
+  },
+  {
+    "full path": "src/components/portal/NotificationsTab.tsx",
+    "file size": 6871,
+    "modified timestamp": "2026-08-11T05:56:49.246Z"
+  },
+  {
+    "full path": "src/components/portal/PrescriptionsTab.tsx",
+    "file size": 5676,
+    "modified timestamp": "2026-08-11T05:56:49.227Z"
+  },
+  {
+    "full path": "src/components/portal/ProfileTab.tsx",
+    "file size": 8587,
+    "modified timestamp": "2026-08-11T08:30:43.950Z"
+  },
+  {
+    "full path": "src/components/portal/TreatmentsTab.tsx",
+    "file size": 10480,
+    "modified timestamp": "2026-08-11T05:56:49.249Z"
+  },
+  {
+    "full path": "src/components/QRScannerModal.tsx",
+    "file size": 11923,
+    "modified timestamp": "2026-08-11T05:56:49.251Z"
+  },
+  {
+    "full path": "src/components/ReasonForVisitSelect.tsx",
+    "file size": 8221,
+    "modified timestamp": "2026-08-11T07:47:27.055Z"
+  },
+  {
+    "full path": "src/components/RoleGuard.tsx",
+    "file size": 6848,
+    "modified timestamp": "2026-08-11T05:56:49.262Z"
+  },
+  {
+    "full path": "src/components/ScrollProgress.tsx",
+    "file size": 795,
+    "modified timestamp": "2026-08-11T05:56:49.230Z"
+  },
+  {
+    "full path": "src/components/Services.tsx",
+    "file size": 6668,
+    "modified timestamp": "2026-08-11T05:56:49.279Z"
+  },
+  {
+    "full path": "src/components/Testimonials.tsx",
+    "file size": 12430,
+    "modified timestamp": "2026-08-11T05:56:49.283Z"
+  },
+  {
+    "full path": "src/components/TimelineView.tsx",
+    "file size": 35042,
+    "modified timestamp": "2026-08-11T05:56:49.250Z"
+  },
+  {
+    "full path": "src/components/TrustIndicators.tsx",
+    "file size": 2272,
+    "modified timestamp": "2026-08-11T05:56:49.234Z"
+  },
+  {
+    "full path": "src/components/ui/accordion.tsx",
+    "file size": 2015,
+    "modified timestamp": "2026-08-11T05:56:49.247Z"
+  },
+  {
+    "full path": "src/components/ui/alert-dialog.tsx",
+    "file size": 4183,
+    "modified timestamp": "2026-08-11T05:56:49.248Z"
+  },
+  {
+    "full path": "src/components/ui/alert.tsx",
+    "file size": 1589,
+    "modified timestamp": "2026-08-11T05:56:49.271Z"
+  },
+  {
+    "full path": "src/components/ui/aspect-ratio.tsx",
+    "file size": 143,
+    "modified timestamp": "2026-08-11T05:56:49.241Z"
+  },
+  {
+    "full path": "src/components/ui/avatar.tsx",
+    "file size": 1413,
+    "modified timestamp": "2026-08-11T05:56:49.217Z"
+  },
+  {
+    "full path": "src/components/ui/badge.tsx",
+    "file size": 1123,
+    "modified timestamp": "2026-08-11T05:56:49.221Z"
+  },
+  {
+    "full path": "src/components/ui/breadcrumb.tsx",
+    "file size": 2749,
+    "modified timestamp": "2026-08-11T05:56:49.232Z"
+  },
+  {
+    "full path": "src/components/ui/button-group.tsx",
+    "file size": 2209,
+    "modified timestamp": "2026-08-11T05:56:49.228Z"
+  },
+  {
+    "full path": "src/components/ui/button.tsx",
+    "file size": 1894,
+    "modified timestamp": "2026-08-11T05:56:49.258Z"
+  },
+  {
+    "full path": "src/components/ui/calendar.tsx",
+    "file size": 7217,
+    "modified timestamp": "2026-08-11T05:56:49.219Z"
+  },
+  {
+    "full path": "src/components/ui/card.tsx",
+    "file size": 1817,
+    "modified timestamp": "2026-08-11T05:56:49.254Z"
+  },
+  {
+    "full path": "src/components/ui/carousel.tsx",
+    "file size": 6200,
+    "modified timestamp": "2026-08-11T05:56:49.268Z"
+  },
+  {
+    "full path": "src/components/ui/chart.tsx",
+    "file size": 10317,
+    "modified timestamp": "2026-08-11T05:56:49.267Z"
+  },
+  {
+    "full path": "src/components/ui/checkbox.tsx",
+    "file size": 1043,
+    "modified timestamp": "2026-08-11T05:56:49.253Z"
+  },
+  {
+    "full path": "src/components/ui/collapsible.tsx",
+    "file size": 335,
+    "modified timestamp": "2026-08-11T05:56:49.225Z"
+  },
+  {
+    "full path": "src/components/ui/command.tsx",
+    "file size": 4876,
+    "modified timestamp": "2026-08-11T05:56:49.254Z"
+  },
+  {
+    "full path": "src/components/ui/context-menu.tsx",
+    "file size": 7391,
+    "modified timestamp": "2026-08-11T05:56:49.258Z"
+  },
+  {
+    "full path": "src/components/ui/dialog.tsx",
+    "file size": 3648,
+    "modified timestamp": "2026-08-11T05:56:49.230Z"
+  },
+  {
+    "full path": "src/components/ui/drawer.tsx",
+    "file size": 2973,
+    "modified timestamp": "2026-08-11T05:56:49.217Z"
+  },
+  {
+    "full path": "src/components/ui/dropdown-menu.tsx",
+    "file size": 7596,
+    "modified timestamp": "2026-08-11T05:56:49.231Z"
+  },
+  {
+    "full path": "src/components/ui/empty.tsx",
+    "file size": 2396,
+    "modified timestamp": "2026-08-11T05:56:49.248Z"
+  },
+  {
+    "full path": "src/components/ui/field.tsx",
+    "file size": 6044,
+    "modified timestamp": "2026-08-11T05:56:49.239Z"
+  },
+  {
+    "full path": "src/components/ui/form.tsx",
+    "file size": 4201,
+    "modified timestamp": "2026-08-11T05:56:49.266Z"
+  },
+  {
+    "full path": "src/components/ui/hover-card.tsx",
+    "file size": 1246,
+    "modified timestamp": "2026-08-11T05:56:49.259Z"
+  },
+  {
+    "full path": "src/components/ui/input-group.tsx",
+    "file size": 4971,
+    "modified timestamp": "2026-08-11T05:56:49.247Z"
+  },
+  {
+    "full path": "src/components/ui/input-otp.tsx",
+    "file size": 2161,
+    "modified timestamp": "2026-08-11T05:56:49.218Z"
+  },
+  {
+    "full path": "src/components/ui/input.tsx",
+    "file size": 776,
+    "modified timestamp": "2026-08-11T05:56:49.229Z"
+  },
+  {
+    "full path": "src/components/ui/item.tsx",
+    "file size": 4494,
+    "modified timestamp": "2026-08-11T05:56:49.229Z"
+  },
+  {
+    "full path": "src/components/ui/kbd.tsx",
+    "file size": 862,
+    "modified timestamp": "2026-08-11T05:56:49.261Z"
+  },
+  {
+    "full path": "src/components/ui/label.tsx",
+    "file size": 716,
+    "modified timestamp": "2026-08-11T05:56:49.246Z"
+  },
+  {
+    "full path": "src/components/ui/menubar.tsx",
+    "file size": 8546,
+    "modified timestamp": "2026-08-11T05:56:49.234Z"
+  },
+  {
+    "full path": "src/components/ui/navigation-menu.tsx",
+    "file size": 5152,
+    "modified timestamp": "2026-08-11T05:56:49.270Z"
+  },
+  {
+    "full path": "src/components/ui/pagination.tsx",
+    "file size": 2739,
+    "modified timestamp": "2026-08-11T05:56:49.218Z"
+  },
+  {
+    "full path": "src/components/ui/popover.tsx",
+    "file size": 1352,
+    "modified timestamp": "2026-08-11T05:56:49.244Z"
+  },
+  {
+    "full path": "src/components/ui/progress.tsx",
+    "file size": 781,
+    "modified timestamp": "2026-08-11T05:56:49.263Z"
+  },
+  {
+    "full path": "src/components/ui/radio-group.tsx",
+    "file size": 1405,
+    "modified timestamp": "2026-08-11T05:56:49.239Z"
+  },
+  {
+    "full path": "src/components/ui/resizable.tsx",
+    "file size": 1552,
+    "modified timestamp": "2026-08-11T05:56:49.214Z"
+  },
+  {
+    "full path": "src/components/ui/scroll-area.tsx",
+    "file size": 1635,
+    "modified timestamp": "2026-08-11T05:56:49.277Z"
+  },
+  {
+    "full path": "src/components/ui/select.tsx",
+    "file size": 5749,
+    "modified timestamp": "2026-08-11T05:56:49.221Z"
+  },
+  {
+    "full path": "src/components/ui/separator.tsx",
+    "file size": 723,
+    "modified timestamp": "2026-08-11T05:56:49.217Z"
+  },
+  {
+    "full path": "src/components/ui/sheet.tsx",
+    "file size": 4248,
+    "modified timestamp": "2026-08-11T05:56:49.230Z"
+  },
+  {
+    "full path": "src/components/ui/sidebar.tsx",
+    "file size": 23975,
+    "modified timestamp": "2026-08-11T05:56:49.259Z"
+  },
+  {
+    "full path": "src/components/ui/skeleton.tsx",
+    "file size": 239,
+    "modified timestamp": "2026-08-11T05:56:49.241Z"
+  },
+  {
+    "full path": "src/components/ui/slider.tsx",
+    "file size": 1025,
+    "modified timestamp": "2026-08-11T05:56:49.277Z"
+  },
+  {
+    "full path": "src/components/ui/sonner.tsx",
+    "file size": 734,
+    "modified timestamp": "2026-08-11T05:56:49.220Z"
+  },
+  {
+    "full path": "src/components/ui/spinner.tsx",
+    "file size": 331,
+    "modified timestamp": "2026-08-11T05:56:49.251Z"
+  },
+  {
+    "full path": "src/components/ui/switch.tsx",
+    "file size": 1156,
+    "modified timestamp": "2026-08-11T05:56:49.232Z"
+  },
+  {
+    "full path": "src/components/ui/table.tsx",
+    "file size": 2820,
+    "modified timestamp": "2026-08-11T05:56:49.260Z"
+  },
+  {
+    "full path": "src/components/ui/tabs.tsx",
+    "file size": 1934,
+    "modified timestamp": "2026-08-11T05:56:49.237Z"
+  },
+  {
+    "full path": "src/components/ui/textarea.tsx",
+    "file size": 677,
+    "modified timestamp": "2026-08-11T05:56:49.276Z"
+  },
+  {
+    "full path": "src/components/ui/toast.tsx",
+    "file size": 4845,
+    "modified timestamp": "2026-08-11T05:56:49.265Z"
+  },
+  {
+    "full path": "src/components/ui/toaster.tsx",
+    "file size": 772,
+    "modified timestamp": "2026-08-11T05:56:49.259Z"
+  },
+  {
+    "full path": "src/components/ui/toggle-group.tsx",
+    "file size": 1752,
+    "modified timestamp": "2026-08-11T05:56:49.235Z"
+  },
+  {
+    "full path": "src/components/ui/toggle.tsx",
+    "file size": 1534,
+    "modified timestamp": "2026-08-11T05:56:49.223Z"
+  },
+  {
+    "full path": "src/components/ui/tooltip.tsx",
+    "file size": 1278,
+    "modified timestamp": "2026-08-11T05:56:49.260Z"
+  },
+  {
+    "full path": "src/components/WhatsAppButton.tsx",
+    "file size": 1077,
+    "modified timestamp": "2026-08-11T05:56:49.267Z"
+  },
+  {
+    "full path": "src/components/WhyChooseUs.tsx",
+    "file size": 4508,
+    "modified timestamp": "2026-08-11T05:56:49.270Z"
+  },
+  {
+    "full path": "src/config/clinicConfig.ts",
+    "file size": 699,
+    "modified timestamp": "2026-08-11T05:56:49.260Z"
+  },
+  {
+    "full path": "src/config/dentalProblems.ts",
+    "file size": 598,
+    "modified timestamp": "2026-08-11T07:47:09.123Z"
+  },
+  {
+    "full path": "src/config/recallConfig.ts",
+    "file size": 1325,
+    "modified timestamp": "2026-08-11T05:56:49.231Z"
+  },
+  {
+    "full path": "src/hooks/use-mobile.tsx",
+    "file size": 576,
+    "modified timestamp": "2026-08-11T05:56:49.254Z"
+  },
+  {
+    "full path": "src/hooks/use-toast.ts",
+    "file size": 3895,
+    "modified timestamp": "2026-08-11T05:56:49.222Z"
+  },
+  {
+    "full path": "src/hooks/useAppointmentSubscription.ts",
+    "file size": 1647,
+    "modified timestamp": "2026-08-11T05:56:49.222Z"
+  },
+  {
+    "full path": "src/hooks/useLocalStorage.ts",
+    "file size": 1256,
+    "modified timestamp": "2026-08-11T05:56:49.246Z"
+  },
+  {
+    "full path": "src/hooks/useRealtimeHooks.ts",
+    "file size": 9772,
+    "modified timestamp": "2026-08-11T05:56:49.267Z"
+  },
+  {
+    "full path": "src/index.css",
+    "file size": 7244,
+    "modified timestamp": "2026-08-11T05:56:49.213Z"
+  },
+  {
+    "full path": "src/lib/audit.ts",
+    "file size": 5037,
+    "modified timestamp": "2026-08-11T05:56:49.235Z"
+  },
+  {
+    "full path": "src/lib/auth.ts",
+    "file size": 31986,
+    "modified timestamp": "2026-08-11T05:56:49.225Z"
+  },
+  {
+    "full path": "src/lib/automationStore.ts",
+    "file size": 26890,
+    "modified timestamp": "2026-08-11T05:56:49.235Z"
+  },
+  {
+    "full path": "src/lib/check-db.ts",
+    "file size": 3659,
+    "modified timestamp": "2026-08-11T05:56:49.275Z"
+  },
+  {
+    "full path": "src/lib/dbHealth.ts",
+    "file size": 3903,
+    "modified timestamp": "2026-08-11T05:56:49.252Z"
+  },
+  {
+    "full path": "src/lib/diagnostics.ts",
+    "file size": 7482,
+    "modified timestamp": "2026-08-11T05:56:49.262Z"
+  },
+  {
+    "full path": "src/lib/email.ts",
+    "file size": 5164,
+    "modified timestamp": "2026-08-11T06:51:05.914Z"
+  },
+  {
+    "full path": "src/lib/formBuilderStore.ts",
+    "file size": 31162,
+    "modified timestamp": "2026-08-11T05:56:49.260Z"
+  },
+  {
+    "full path": "src/lib/pdfGenerator.ts",
+    "file size": 11323,
+    "modified timestamp": "2026-08-11T05:56:49.216Z"
+  },
+  {
+    "full path": "src/lib/security.ts",
+    "file size": 11697,
+    "modified timestamp": "2026-08-11T05:56:49.252Z"
+  },
+  {
+    "full path": "src/lib/sms.ts",
+    "file size": 6967,
+    "modified timestamp": "2026-08-11T05:56:49.255Z"
+  },
+  {
+    "full path": "src/lib/supabase.ts",
+    "file size": 14369,
+    "modified timestamp": "2026-08-11T05:56:49.240Z"
+  },
+  {
+    "full path": "src/lib/syncState.ts",
+    "file size": 473,
+    "modified timestamp": "2026-08-11T05:56:49.227Z"
+  },
+  {
+    "full path": "src/lib/tasksStore.ts",
+    "file size": 20670,
+    "modified timestamp": "2026-08-11T05:56:49.261Z"
+  },
+  {
+    "full path": "src/lib/utils.ts",
+    "file size": 526,
+    "modified timestamp": "2026-08-11T05:56:49.246Z"
+  },
+  {
+    "full path": "src/lib/whatsapp.ts",
+    "file size": 14231,
+    "modified timestamp": "2026-08-11T06:57:20.780Z"
+  },
+  {
+    "full path": "src/main.tsx",
+    "file size": 7462,
+    "modified timestamp": "2026-08-11T05:56:49.257Z"
+  },
+  {
+    "full path": "src/pages/AdminLogin.tsx",
+    "file size": 35309,
+    "modified timestamp": "2026-08-11T05:56:49.231Z"
+  },
+  {
+    "full path": "src/pages/crm/Analytics.tsx",
+    "file size": 26772,
+    "modified timestamp": "2026-08-11T05:56:49.221Z"
+  },
+  {
+    "full path": "src/pages/crm/Appointments.tsx",
+    "file size": 156490,
+    "modified timestamp": "2026-08-11T08:29:11.475Z"
+  },
+  {
+    "full path": "src/pages/crm/AuditLogs.tsx",
+    "file size": 10540,
+    "modified timestamp": "2026-08-11T05:56:49.229Z"
+  },
+  {
+    "full path": "src/pages/crm/Automation.tsx",
+    "file size": 82001,
+    "modified timestamp": "2026-08-11T05:56:49.260Z"
+  },
+  {
+    "full path": "src/pages/crm/Billing.tsx",
+    "file size": 76371,
+    "modified timestamp": "2026-08-11T05:56:49.229Z"
+  },
+  {
+    "full path": "src/pages/crm/Cases.tsx",
+    "file size": 82138,
+    "modified timestamp": "2026-08-11T05:56:49.242Z"
+  },
+  {
+    "full path": "src/pages/crm/Collections.tsx",
+    "file size": 11672,
+    "modified timestamp": "2026-08-11T05:56:49.250Z"
+  },
+  {
+    "full path": "src/pages/crm/Compliance.tsx",
+    "file size": 114071,
+    "modified timestamp": "2026-08-11T05:56:49.251Z"
+  },
+  {
+    "full path": "src/pages/crm/Copilot.tsx",
+    "file size": 102408,
+    "modified timestamp": "2026-08-11T05:56:49.262Z"
+  },
+  {
+    "full path": "src/pages/crm/CRMLayout.tsx",
+    "file size": 117644,
+    "modified timestamp": "2026-08-11T08:28:25.468Z"
+  },
+  {
+    "full path": "src/pages/crm/Dashboard.tsx",
+    "file size": 164413,
+    "modified timestamp": "2026-08-11T07:48:27.961Z"
+  },
+  {
+    "full path": "src/pages/crm/Doctors.tsx",
+    "file size": 22299,
+    "modified timestamp": "2026-08-11T05:56:49.222Z"
+  },
+  {
+    "full path": "src/pages/crm/DocumentStudio.tsx",
+    "file size": 62644,
+    "modified timestamp": "2026-08-11T05:56:49.250Z"
+  },
+  {
+    "full path": "src/pages/crm/Endodontics.tsx",
+    "file size": 87605,
+    "modified timestamp": "2026-08-11T05:56:49.249Z"
+  },
+  {
+    "full path": "src/pages/crm/Expenses.tsx",
+    "file size": 19202,
+    "modified timestamp": "2026-08-11T05:56:49.241Z"
+  },
+  {
+    "full path": "src/pages/crm/Export.tsx",
+    "file size": 67257,
+    "modified timestamp": "2026-08-11T05:56:49.242Z"
+  },
+  {
+    "full path": "src/pages/crm/Followups.tsx",
+    "file size": 25801,
+    "modified timestamp": "2026-08-11T05:56:49.243Z"
+  },
+  {
+    "full path": "src/pages/crm/ImagingDocuments.tsx",
+    "file size": 43199,
+    "modified timestamp": "2026-08-11T05:56:49.264Z"
+  },
+  {
+    "full path": "src/pages/crm/Inventory.tsx",
+    "file size": 64537,
+    "modified timestamp": "2026-08-11T05:56:49.217Z"
+  },
+  {
+    "full path": "src/pages/crm/Knowledge.tsx",
+    "file size": 110365,
+    "modified timestamp": "2026-08-11T05:56:49.245Z"
+  },
+  {
+    "full path": "src/pages/crm/LabWork.tsx",
+    "file size": 24904,
+    "modified timestamp": "2026-08-11T05:56:49.244Z"
+  },
+  {
+    "full path": "src/pages/crm/Letters.tsx",
+    "file size": 19577,
+    "modified timestamp": "2026-08-11T05:56:49.229Z"
+  },
+  {
+    "full path": "src/pages/crm/Operations.tsx",
+    "file size": 95368,
+    "modified timestamp": "2026-08-11T05:56:49.261Z"
+  },
+  {
+    "full path": "src/pages/crm/Patients.tsx",
+    "file size": 531678,
+    "modified timestamp": "2026-08-11T08:27:55.856Z"
+  },
+  {
+    "full path": "src/pages/crm/Profile.tsx",
+    "file size": 52921,
+    "modified timestamp": "2026-08-11T05:56:49.225Z"
+  },
+  {
+    "full path": "src/pages/crm/Reports.tsx",
+    "file size": 31697,
+    "modified timestamp": "2026-08-11T05:56:49.235Z"
+  },
+  {
+    "full path": "src/pages/crm/RevenueCycle.tsx",
+    "file size": 95817,
+    "modified timestamp": "2026-08-11T05:56:49.226Z"
+  },
+  {
+    "full path": "src/pages/crm/Settings.tsx",
+    "file size": 94270,
+    "modified timestamp": "2026-08-11T06:58:11.009Z"
+  },
+  {
+    "full path": "src/pages/crm/Setup.tsx",
+    "file size": 81758,
+    "modified timestamp": "2026-08-11T05:56:49.253Z"
+  },
+  {
+    "full path": "src/pages/crm/Tasks.tsx",
+    "file size": 59702,
+    "modified timestamp": "2026-08-11T05:56:49.241Z"
+  },
+  {
+    "full path": "src/pages/crm/ThreeDModel.tsx",
+    "file size": 111783,
+    "modified timestamp": "2026-08-11T05:56:49.263Z"
+  },
+  {
+    "full path": "src/pages/crm/TreatmentCoordinator.tsx",
+    "file size": 56094,
+    "modified timestamp": "2026-08-11T05:56:49.257Z"
+  },
+  {
+    "full path": "src/pages/crm/TreatmentExecution.tsx",
+    "file size": 111425,
+    "modified timestamp": "2026-08-11T05:56:49.238Z"
+  },
+  {
+    "full path": "src/pages/crm/Treatments.tsx",
+    "file size": 52554,
+    "modified timestamp": "2026-08-11T05:56:49.273Z"
+  },
+  {
+    "full path": "src/pages/crm/Users.tsx",
+    "file size": 48830,
+    "modified timestamp": "2026-08-11T05:56:49.276Z"
+  },
+  {
+    "full path": "src/pages/crm/WorkspaceLandingPages.tsx",
+    "file size": 38145,
+    "modified timestamp": "2026-08-11T05:56:49.215Z"
+  },
+  {
+    "full path": "src/pages/PatientPortal.tsx",
+    "file size": 84304,
+    "modified timestamp": "2026-08-11T05:56:49.228Z"
+  },
+  {
+    "full path": "src/pages/QueueDisplay.tsx",
+    "file size": 25412,
+    "modified timestamp": "2026-08-11T05:56:49.236Z"
+  },
+  {
+    "full path": "src/pages/ResetPassword.tsx",
+    "file size": 11331,
+    "modified timestamp": "2026-08-11T05:56:49.249Z"
+  },
+  {
+    "full path": "src/services/appointmentService.ts",
+    "file size": 4298,
+    "modified timestamp": "2026-08-11T07:34:56.788Z"
+  },
+  {
+    "full path": "src/services/caseService.ts",
+    "file size": 18095,
+    "modified timestamp": "2026-08-11T05:56:49.255Z"
+  },
+  {
+    "full path": "src/services/complianceService.ts",
+    "file size": 27173,
+    "modified timestamp": "2026-08-11T05:56:49.218Z"
+  },
+  {
+    "full path": "src/services/configService.ts",
+    "file size": 31590,
+    "modified timestamp": "2026-08-11T05:56:49.258Z"
+  },
+  {
+    "full path": "src/services/dashboardService.ts",
+    "file size": 1995,
+    "modified timestamp": "2026-08-11T05:56:49.224Z"
+  },
+  {
+    "full path": "src/services/endodonticService.ts",
+    "file size": 32402,
+    "modified timestamp": "2026-08-11T05:56:49.236Z"
+  },
+  {
+    "full path": "src/services/followupService.ts",
+    "file size": 1678,
+    "modified timestamp": "2026-08-11T05:56:49.265Z"
+  },
+  {
+    "full path": "src/services/imagingDocumentsService.ts",
+    "file size": 31230,
+    "modified timestamp": "2026-08-11T05:56:49.232Z"
+  },
+  {
+    "full path": "src/services/knowledgeService.ts",
+    "file size": 35274,
+    "modified timestamp": "2026-08-11T05:56:49.230Z"
+  },
+  {
+    "full path": "src/services/operationsService.ts",
+    "file size": 20082,
+    "modified timestamp": "2026-08-11T05:56:49.251Z"
+  },
+  {
+    "full path": "src/services/patientService.ts",
+    "file size": 2850,
+    "modified timestamp": "2026-08-11T05:56:49.222Z"
+  },
+  {
+    "full path": "src/services/recallPostponementService.ts",
+    "file size": 10420,
+    "modified timestamp": "2026-08-11T05:56:49.264Z"
+  },
+  {
+    "full path": "src/services/revenueCycleService.ts",
+    "file size": 31531,
+    "modified timestamp": "2026-08-11T05:56:49.261Z"
+  },
+  {
+    "full path": "src/services/slotService.ts",
+    "file size": 982,
+    "modified timestamp": "2026-08-11T05:56:49.258Z"
+  },
+  {
+    "full path": "src/services/treatmentCoordinatorService.ts",
+    "file size": 23037,
+    "modified timestamp": "2026-08-11T05:56:49.234Z"
+  },
+  {
+    "full path": "src/supabaseClient.ts",
+    "file size": 65,
+    "modified timestamp": "2026-08-11T05:56:49.223Z"
+  },
+  {
+    "full path": "src/types/config.ts",
+    "file size": 3196,
+    "modified timestamp": "2026-08-11T05:56:49.259Z"
+  },
+  {
+    "full path": "src/types/knowledge.ts",
+    "file size": 2754,
+    "modified timestamp": "2026-08-11T05:56:49.274Z"
+  },
+  {
+    "full path": "src/utils/appointmentTime.ts",
+    "file size": 4990,
+    "modified timestamp": "2026-08-11T07:34:41.311Z"
+  },
+  {
+    "full path": "src/utils/dateUtils.ts",
+    "file size": 856,
+    "modified timestamp": "2026-08-11T05:56:49.262Z"
+  },
+  {
+    "full path": "src/utils/exportCsv.ts",
+    "file size": 1181,
+    "modified timestamp": "2026-08-11T05:56:49.255Z"
+  },
+  {
+    "full path": "src/utils/patientUtils.ts",
+    "file size": 10729,
+    "modified timestamp": "2026-08-11T05:56:49.266Z"
+  },
+  {
+    "full path": "src/utils/syncPatientStatus.ts",
+    "file size": 2789,
+    "modified timestamp": "2026-08-11T05:56:49.231Z"
+  },
+  {
+    "full path": "src/utils/whatsapp.ts",
+    "file size": 21154,
+    "modified timestamp": "2026-08-11T06:57:08.619Z"
+  },
+  {
+    "full path": "supabase/migrations/20260607120338_base_schema.sql.sql",
+    "file size": 3908,
+    "modified timestamp": "2026-08-11T05:56:49.242Z"
+  },
+  {
+    "full path": "supabase/migrations/20260607120737_staff_management_schema.sql.sql",
+    "file size": 1716,
+    "modified timestamp": "2026-08-11T05:56:49.266Z"
+  },
+  {
+    "full path": "supabase/migrations/20260607120744_staff_roles_policies.sql.sql",
+    "file size": 739,
+    "modified timestamp": "2026-08-11T05:56:49.234Z"
+  },
+  {
+    "full path": "supabase/migrations/20260608163000_authenticated_access_policies.sql",
+    "file size": 895,
+    "modified timestamp": "2026-08-11T05:56:49.247Z"
+  },
+  {
+    "full path": "supabase/migrations/20260608164000_rls_and_performance_upgrades.sql",
+    "file size": 8354,
+    "modified timestamp": "2026-08-11T05:56:49.259Z"
+  },
+  {
+    "full path": "supabase/migrations/20260608174500_patients_appointments_triggers.sql",
+    "file size": 7865,
+    "modified timestamp": "2026-08-11T05:56:49.228Z"
+  },
+  {
+    "full path": "supabase/migrations/20260608181000_sync_appointment_to_patient.sql",
+    "file size": 4658,
+    "modified timestamp": "2026-08-11T05:56:49.233Z"
+  },
+  {
+    "full path": "supabase/migrations/20260609083000_doctors_module.sql",
+    "file size": 2103,
+    "modified timestamp": "2026-08-11T05:56:49.243Z"
+  },
+  {
+    "full path": "supabase/migrations/20260609085500_sync_reconciliation.sql",
+    "file size": 5653,
+    "modified timestamp": "2026-08-11T05:56:49.280Z"
+  },
+  {
+    "full path": "supabase/migrations/20260609090000_widen_staff_roles_check.sql",
+    "file size": 770,
+    "modified timestamp": "2026-08-11T05:56:49.246Z"
+  },
+  {
+    "full path": "supabase/migrations/20260609092000_widen_rls_policies.sql",
+    "file size": 3856,
+    "modified timestamp": "2026-08-11T05:56:49.233Z"
+  },
+  {
+    "full path": "supabase/migrations/20260615000000_cascade_deletes.sql",
+    "file size": 4272,
+    "modified timestamp": "2026-08-11T05:56:49.243Z"
+  },
+  {
+    "full path": "supabase/migrations/20260616000000_add_treatment_columns.sql",
+    "file size": 1433,
+    "modified timestamp": "2026-08-11T05:56:49.273Z"
+  },
+  {
+    "full path": "supabase/migrations/20260617000000_audit_and_reconciliation_repair.sql",
+    "file size": 7282,
+    "modified timestamp": "2026-08-11T05:56:49.274Z"
+  },
+  {
+    "full path": "supabase/migrations/20260621120000_remove_patients_phone_uniqueness.sql",
+    "file size": 5025,
+    "modified timestamp": "2026-08-11T05:56:49.243Z"
+  },
+  {
+    "full path": "supabase/migrations/20260622034000_sync_patient_status_trigger.sql",
+    "file size": 2961,
+    "modified timestamp": "2026-08-11T05:56:49.224Z"
+  },
+  {
+    "full path": "supabase/migrations/20260623000000_add_inventory_notes_cost.sql",
+    "file size": 244,
+    "modified timestamp": "2026-08-11T05:56:49.248Z"
+  },
+  {
+    "full path": "supabase/migrations/20260624000000_update_inventory_safety_limit_and_rls.sql",
+    "file size": 2025,
+    "modified timestamp": "2026-08-11T05:56:49.240Z"
+  },
+  {
+    "full path": "supabase/migrations/20260625000000_add_reorder_level_to_inventory.sql",
+    "file size": 211,
+    "modified timestamp": "2026-08-11T05:56:49.266Z"
+  },
+  {
+    "full path": "supabase/migrations/20260715211752_treatment_coordinator.sql",
+    "file size": 4992,
+    "modified timestamp": "2026-08-11T05:56:49.248Z"
+  },
+  {
+    "full path": "supabase/policies/policies.sql",
+    "file size": 3459,
+    "modified timestamp": "2026-08-11T05:56:49.250Z"
+  },
+  {
+    "full path": "supabase/schema.sql",
+    "file size": 19968,
+    "modified timestamp": "2026-08-11T05:56:49.237Z"
+  },
+  {
+    "full path": "supabase/triggers/triggers.sql",
+    "file size": 6513,
+    "modified timestamp": "2026-08-11T05:56:49.216Z"
+  },
+  {
+    "full path": "tsconfig.json",
+    "file size": 568,
+    "modified timestamp": "2026-08-11T05:56:49.225Z"
+  },
+  {
+    "full path": "vercel.json",
+    "file size": 341,
+    "modified timestamp": "2026-08-11T05:56:49.221Z"
+  },
+  {
+    "full path": "vite.config.ts",
+    "file size": 5388,
+    "modified timestamp": "2026-08-11T08:25:03.655Z"
+  }
+]

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.cache/
+tmp/
+backups/
+.env
+.env.local
+.DS_Store
+*.log
+*.zip
+*.bak
+*.tmp
+*.gz
+*.tar
+*.rar
+*.7z
